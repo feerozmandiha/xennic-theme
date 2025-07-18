@@ -1,0 +1,42 @@
+{
+    "version": 3,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "#004aad",
+                    "name": "آبی اصلی"
+                },
+                {
+                    "slug": "accent",
+                    "color": "#ffaa00",
+                    "name": "نارنجی تاکید"
+                }
+            ]
+        },
+        "typography": {
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "size": "14px",
+                    "name": "کوچک"
+                },
+                {
+                    "slug": "medium",
+                    "size": "18px",
+                    "name": "متوسط"
+                },
+                {
+                    "slug": "large",
+                    "size": "24px",
+                    "name": "بزرگ"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1200px",
+            "wideSize": "1600px"
+        }
+    }
+}
