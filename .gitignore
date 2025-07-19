@@ -1,0 +1,32 @@
+# وردپرس عمومی
+wp-config.php
+.htaccess
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/plugins/
+
+# LocalWP مسیرها
+*.sql
+*.log
+*.db
+local-settings.php
+
+# سیستم‌ها و ادیتورها
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/
+npm-debug.log
+package-lock.json
+.env
+
+# فایل‌های build یا کامپایل شده
+dist/
+build/
+
+# Git
+#.gitignore
+*.orig
