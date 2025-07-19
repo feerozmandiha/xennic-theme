@@ -1,111 +1,156 @@
 {
-  "version": 3,
-  "settings": {
-    "direction": "rtl",
-    "color": {
-      "custom": false,
-      "palette": [
-        {
-          "slug": "primary",
-          "color": "#0055a5",
-          "name": "آبی اصلی (اعتماد)"
+    "settings": {
+        "border": {
+            "color": true,
+            "style": true
         },
-        {
-          "slug": "brand",
-          "color": "#eebb1a",
-          "name": "زرد برند (CTA)"
+        "color": {
+            "custom": false,
+            "palette": [
+                {
+                    "color": "#0055a5",
+                    "name": "آبی اصلی (اعتماد)",
+                    "slug": "primary"
+                },
+                {
+                    "color": "#eebb1a",
+                    "name": "زرد برند (CTA)",
+                    "slug": "brand"
+                },
+                {
+                    "color": "#ed1c24",
+                    "name": "قرمز تاکید (اخطار)",
+                    "slug": "danger"
+                },
+                {
+                    "color": "#2c363d",
+                    "name": "خاکستری صنعتی",
+                    "slug": "neutral"
+                },
+                {
+                    "color": "#ffffff",
+                    "name": "سفید",
+                    "slug": "white"
+                }
+            ]
         },
-        {
-          "slug": "danger",
-          "color": "#ed1c24",
-          "name": "قرمز تاکید (اخطار)"
+        "layout": {
+            "contentSize": "1000px",
+            "wideSize": "1200px"
         },
-        {
-          "slug": "neutral",
-          "color": "#2c363d",
-          "name": "خاکستری صنعتی"
+        "spacing": {
+            "blockGap": true,
+            "margin": true,
+            "padding": true,
+            "units": [
+                "px",
+                "rem",
+                "em",
+                "%"
+            ]
         },
-        {
-          "slug": "white",
-          "color": "#ffffff",
-          "name": "سفید"
-        }
-      ]
-    },
-    "typography": {
-      "fluid": true,
-      "fontFamilies": [
-        {
-          "fontFamily": "IRANSansXFaNum, sans-serif",
-          "slug": "iransansx",
-          "name": "IRANSansXFaNum"
-        }
-      ],
-      "fontSizes": [
-        {
-          "slug": "small",
-          "size": "0.875rem",
-          "name": "کوچک"
-        },
-        {
-          "slug": "normal",
-          "size": "1rem",
-          "name": "عادی"
-        },
-        {
-          "slug": "medium",
-          "size": "1.25rem",
-          "name": "متوسط"
-        },
-        {
-          "slug": "large",
-          "size": "1.5rem",
-          "name": "بزرگ"
-        },
-        {
-          "slug": "x-large",
-          "size": "2rem",
-          "name": "خیلی بزرگ"
-        }
-      ]
-    },
-    "layout": {
-      "contentSize": "1200px",
-      "wideSize": "1600px",
-      "spacing": {
-        "blockGap": "1.5rem"
-      }
-    }
-  },
-  "styles": {
-    "typography": {
-      "fontFamily": "var(--wp--preset--font-family--iransansx)",
-      "lineHeight": "1.8"
-    },
-    "color": {
-      "text": "var(--wp--preset--color--neutral)",
-      "background": "var(--wp--preset--color--white)"
-    },
-    "elements": {
-      "heading": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--large)"
+            "fluid": true,
+            "fontFamilies": [
+                {
+                    "fontFamily": "IRANSansXFaNum, sans-serif",
+                    "name": "IRANSansXFaNum",
+                    "slug": "iransansx"
+                },
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "IRANSansXFaNum",
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "src": [
+                                "file:./assets/fonts/iransansxfanum/iransansxfanum-700-normal.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "IRANSansXFaNum",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/iransansxfanum/iransansxfanum-400-normal.woff2"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "IRANSansXFaNum",
+                    "name": "IRANSansXFaNum",
+                    "slug": "iransansxfanum"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "name": "کوچک",
+                    "size": "0.875rem",
+                    "slug": "small"
+                },
+                {
+                    "name": "عادی",
+                    "size": "1rem",
+                    "slug": "normal"
+                },
+                {
+                    "name": "متوسط",
+                    "size": "1.25rem",
+                    "slug": "medium"
+                },
+                {
+                    "name": "بزرگ",
+                    "size": "1.5rem",
+                    "slug": "large"
+                },
+                {
+                    "name": "خیلی بزرگ",
+                    "size": "2rem",
+                    "slug": "x-large"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "var(--wp--preset--color--white)",
+            "text": "var(--wp--preset--color--neutral)"
         },
-        "color": {
-          "text": "var(--wp--preset--color--primary)"
+        "elements": {
+            "button": {
+                "color": {
+                    "background": "var(--wp--preset--color--brand)",
+                    "text": "var(--wp--preset--color--neutral)"
+                }
+            },
+            "heading": {
+                "color": {
+                    "text": "var(--wp--preset--color--primary)"
+                },
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--large)"
+                }
+            },
+            "link": {
+                ":focus": [],
+                ":hover": {
+                    "color": {
+                        "text": "var(--wp--preset--color--danger)"
+                    }
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--brand)"
+                },
+                "typography": {
+                    "textDecoration": "none"
+                }
+            }
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--iransansx)",
+            "lineHeight": "1.8",
+            "textDecoration": "none"
         }
-      },
-      "link": {
-        "color": {
-          "text": "var(--wp--preset--color--primary)"
-        }
-      },
-      "button": {
-        "color": {
-          "background": "var(--wp--preset--color--brand)",
-          "text": "var(--wp--preset--color--neutral)"
-        }
-      }
-    }
-  }
+    },
+    "version": 3,
+    "$schema": "https://schemas.wp.org/trunk/theme.json"
 }

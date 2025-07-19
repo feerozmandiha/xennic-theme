@@ -1,0 +1,48 @@
+a:hover,
+.wp-block-button__link:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* نمایش لوگوی کامل فقط در دسکتاپ */
+.desktop-logo {
+  display: block;
+}
+.mobile-logo {
+  display: none;
+}
+
+/* اندازه دکمه و متن برای دسکتاپ */
+.responsive-button {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.6rem;
+}
+
+
+/* تبلت */
+@media (max-width: 1024px) {
+  .responsive-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.4rem;
+  }
+}
+
+/* موبایل */
+@media screen and (max-width: 768px) {
+  .desktop-logo {
+    display: none !important;
+  }
+  .mobile-logo {
+    display: block !important;
+  }
+
+  /* مخفی کردن عناصر در موبایل */
+    .hide-on-mobile {
+    display: none !important;
+  }
+
+    .responsive-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
